@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Название компании</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="fonts/opensanscondensed-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="main-header">
+        <div class="main-header__container container">
+          <a class="main-header__logo">
+            <img src="img/logo.png" width="273" height="100" alt="логотип компании">
+          </a>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__link" href="tel:+74997777777">+7(499) 777-77-77</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="tel:+74997777777">+7(499) 777-77-77</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link main-header__link--feedback" href="#">Обратная связь</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <h1 class="visually-hidden">Название компании - самая клевая компания </h1>
+        <nav class="main-nav">
+          <div class="main-nav__container container">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Каталог</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Доставка и оплата</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Прайс-лист</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="slider swiper-container">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <ul class="slider__images swiper-wrapper">
+            <li class="slider__img swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/slide-1@1x.webp 1x, img/slide-1@2x.webp 2x">
+                <!-- 1х: 1400px; 2x: 2800px -->
+                <img src="img/slide-1@1x.jpg" srcset="img/slide-1@2x.jpg 2x" width="1400" height="402" alt="цветные кружки">
+              </picture>
+            </li>
+            <li class="slider__img swiper-slide">
+              <picture>
+                <source type="image/webp" srcset="img/slide-2@1x.webp 1x, img/slide-2@2x.webp 2x">
+                <!-- 1х: 1400px; 2x: 2800px -->
+                <img src="img/slide-2@1x.jpg" srcset="img/slide-2@2x.jpg 2x" width="1400" height="402" alt="цветные кружки">
+              </picture>
+            </li>
+          </ul>
+
+          <button class="swiper-button-prev" type="button" aria-label="слайд назад"></button>
+          <button class="swiper-button-next" type="button" aria-label="слайд вперед"></button>
+        </section>
+        <section class="catalog">
+          <h2 class="catalog__heading visually-hidden">Каталог</h2>
+          <div class="container">
+            <ul class="catalog__breadcrumbs-list">
+              <li class="catalog__breadcrumbs-item">
+                <a class="catalog__breadcrumbs-link" href="#">Главная</a>
+              </li>
+              <li class="catalog__breadcrumbs-item">
+                <a class="catalog__breadcrumbs-link" href="#">Каталог</a>
+              </li>
+              <li class="catalog__breadcrumbs-item">
+                <a class="catalog__breadcrumbs-link catalog__breadcrumbs-link--active" href="#">Бытовая техника</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog__container container">
+            <div class="left-block">
+              <ul class="left-block__list">
+                <li class="left-block__item"> Автомобили</li>
+                <li class="left-block__item left-block__item--active"> <span>Бытовая техника</span>
+                  <ul class="left-block__inner-list">
+                    <li class="left-block__inner-item left-block__inner-item--active"> Микроволновки</li>
+                    <li class="left-block__inner-item"> Холодильники</li>
+                    <li class="left-block__inner-item"> Посудомоечные машины</li>
+                    <li class="left-block__inner-item"> Чайники</li>
+                  </ul>
+                </li>
+                <li class="left-block__item">Мобильная техника</li>
+                <li class="left-block__item">Компьютеры</li>
+                <li class="left-block__item">Одежда</li>
+                <li class="left-block__item">Недвижимость</li>
+              </ul>
+              <a class="price-list" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/excel@1x.webp 1x, img/excel@2x.webp 2x">
+                  <img class="price-list__image" src="img/excel@1x.png" srcset="img/excel@2x.png" alt="Логотип Excel">
+                </picture>
+                <h3 class="price-list__heading">Прайс-лист</h3>
+              </a>
+            </div>
+            <div class="right-block">
+              <ul class="catalog__list">
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/nophoto@1x.webp 1x, img/nophoto@2x.webp 2x">
+                      <img src="img/nophoto@1x.jpg" srcset="img/nophoto@2x.jpg 2x" alt="чайник">
+                    </picture>
+                    <h3 class="catalog__item-heading">Самый клевый чайник, который надо купить!</h3>
+                    <div class="catalog__price-container">
+                      <span class="catalog__price">1 900 р.</span>
+                      <div class="catalog__button"><span class="visually-hidden">Добавить в корзину"</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/nophoto@1x.webp 1x, img/nophoto@2x.webp 2x">
+                      <img src="img/nophoto@1x.jpg" srcset="img/nophoto@2x.jpg 2x" alt="чайник">
+                    </picture>
+                    <h3 class="catalog__item-heading">Самый клевый чайник, который надо купить!</h3>
+                    <div class="catalog__price-container">
+                      <span class="catalog__price">1 900 р.</span>
+                      <div class="catalog__button"><span class="visually-hidden">Добавить в корзину"</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/nophoto@1x.webp 1x, img/nophoto@2x.webp 2x">
+                      <img src="img/nophoto@1x.jpg" srcset="img/nophoto@2x.jpg 2x" alt="чайник">
+                    </picture>
+                    <h3 class="catalog__item-heading">Самый клевый чайник, который надо купить!</h3>
+                    <div class="catalog__price-container">
+                      <span class="catalog__price">1 900 р.</span>
+                      <div class="catalog__button"><span class="visually-hidden">Добавить в корзину"</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/nophoto@1x.webp 1x, img/nophoto@2x.webp 2x">
+                      <img src="img/nophoto@1x.jpg" srcset="img/nophoto@2x.jpg 2x" alt="чайник">
+                    </picture>
+                    <h3 class="catalog__item-heading">Самый клевый чайник, который надо купить!</h3>
+                    <div class="catalog__price-container">
+                      <span class="catalog__price">1 900 р.</span>
+                      <div class="catalog__button"><span class="visually-hidden">Добавить в корзину"</span></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__link" href="#">
+                    <picture>
+                      <source type="image/webp" srcset="img/nophoto@1x.webp 1x, img/nophoto@2x.webp 2x">
+                      <img src="img/nophoto@1x.jpg" srcset="img/nophoto@2x.jpg 2x" alt="чайник">
+                    </picture>
+                    <h3 class="catalog__item-heading">Самый клевый чайник, который надо купить!</h3>
+                    <div class="catalog__price-container">
+                      <span class="catalog__price">1 900 р.</span>
+                      <div class="catalog__button"><span class="visually-hidden">Добавить в корзину"</span></div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link pagination__link--active">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">4</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">5</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">6</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">7</a>
+                  </li>
+                </ul>
+              </div>
+
+              <section class="about">
+                <h2 class="visually-hidden">О компании</h2>
+                <p class="about__text">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников
+                  работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
+                <p class="about__text">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем
+                  на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+              </section>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__container container">
+        <ul class="footer__lists">
+          <li class="footer__copyright">
+            <ul>
+              <li>© 2012–2013 ЗАО «Компания» </li>
+              <li>
+                <a href="mailto:info@name.ru">info@name.ru</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__nav">
+            <ul>
+              <li>
+                <a href="#" class="footer__nav-link">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="footer__nav-link">Каталог</a>
+              </li>
+              <li>
+                <a href="#" class="footer__nav-link">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#" class="footer__nav-link">Прайс-лист</a>
+              </li>
+              <li>
+                <a href="#" class="footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__nav-developed">
+            <img src="img/company.png" width="38" height="36" alt="логотип Пиксель Плюс">
+            <div>
+              <p><a href="# ">Разработка сайта</a> — </p>
+              <p>компания «Пиксель Плюс»</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <section class="modal modal--closed">
+    <div class="modal__overlay ">
+      <div class="modal__container ">
+        <h2 class="modal__heading heading">Обратная связь</h2>
+        <form action="post " class="modal__form">
+          <ul class="modal__list">
+            <li class="modal__item">
+              <label for="modal-name"> <span>Ваше имя</span>
+              <input class="modal__input name" id="modal-name" type="text" name="name" required="">
+              </label>
+            </li>
+            <li class="modal__item">
+              <label for="modal-tel"> <span>Телефон</span>
+              <input class="modal__input tel" id="modal-tel" type="tel" name="tel" minlength="11" pattern="\+79[0-9]{9}|8[0-9]{10} " required="">
+              </label>
+            </li>
+            <li class="modal__item">
+              <label for="modal-email"> <span>Email</span>
+              <input class="modal__input email" id="modal-email" type="email" name="email" required="">
+              </label>
+            </li>
+            <li class="modal__item">
+              <label for="modal-text"><span>Сообщение</span></label>
+              <textarea class="modal__textarea" id="modal-text" name="modal-comment"></textarea>
+            </li>
+          </ul>
+          <button class="modal__submit" aria-label="Отправить форму">Отправить</button>
+        </form>
+        <button class="modal__button-close" aria-label="Закрыть окно"></button>
+      </div>
+    </div>
+  </section>
+  <script rel="preconnect " src="js/vendors.js "></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
